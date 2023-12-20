@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: -10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Aggiusta la larghezza degli elementi del menu se necessario */
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 10px; /* Modifica la larghezza del margine secondo le tue preferenze */
+}
+
+.container-fluid a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Stile dei link nel menu di navigazione */
+.navbar-nav .nav-link {
+  color: #fff; /* Cambia il colore del testo */
+}
+
+/* Stile del pulsante di ricerca */
+.form-control {
+  border: none; /* Rimuove il bordo del campo di ricerca */
+  border-radius: 0; /* Rimuove i bordi arrotondati */
+}
+
+.btn-outline-success {
+  color: #28a745; /* Cambia il colore del testo del pulsante */
+  border-color: #28a745; /* Cambia il colore del bordo del pulsante */
+}
+
+.dropdown-divider {
+  display: none;
+}
+
+/* Posizione del pulsante di ricerca */
+.d-flex {
+  justify-content: flex-end; /* Allinea il pulsante di ricerca a destra */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.center-text {
+  position: absolute;
+  justify-content: center;
+  z-index: 2;
+  color: whitesmoke;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+#search-bar input {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 10px;
+  padding: 10px;
+  width: 200px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 100px;
+  font-weight: 600;
+}
+
+.video-container {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+#wikipedia img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+}
+
+#wikipedia img {
+  bottom: 10px;
+  right: 10px;
+}
+
+#explanation img {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #000f14;
+  display: flex;
+  align-items: center; /* Allinea gli elementi verticalmente al centro */
+  justify-content: center; /* Allinea gli elementi orizzontalmente al centro */
+  text-align: center; /* Allinea il testo al centro */
+  position: relative;
+}
+
+footer p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-left: 10px; /* Aggiungi margine a sinistra per separare l'immagine dal testo */
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  #primary-states nav ul {
+    text-align: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 8px;
+    top: 0%;
+    left: -9%;
+    position: absolute;
+  }
+
+  #secondary-states nav ul {
+    text-align: center;
+    font-weight: 600;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 10px;
+    top: 20px;
+    right: -35%; /* Imposta la posizione a destra */
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.2);
+    height: 140px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .center-text {
+    font-size: 3rem;
+  }
+} 
